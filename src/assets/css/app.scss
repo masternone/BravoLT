@@ -1,0 +1,15 @@
+@import "./variables.scss";
+@import "./material-overide.scss";
+
+html {
+  font-size: .625em;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

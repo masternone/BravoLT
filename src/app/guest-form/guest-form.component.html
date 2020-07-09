@@ -1,0 +1,38 @@
+<mat-card class="guest-form">
+  <h2>Enter Data:</h2>
+  <form [formGroup]="guestForm">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" class="guest-form__name">
+      <mat-error *ngIf="guestForm.controls.name.hasError('required')">Name is required</mat-error>
+    </mat-form-field>
+    <br/>
+    <mat-radio-group formControlName="beds" class="guest-form__beds" aria-label="Select number of rooms">
+      <mat-label>Number of Beds</mat-label>
+      <br/>
+      <mat-radio-button value="1">1 bed</mat-radio-button>
+      <br/>
+      <mat-radio-button value="2">2 beds</mat-radio-button>
+      <br/>
+      <mat-radio-button value="3">3 beds</mat-radio-button>
+      <br/>
+    </mat-radio-group>
+    <br/>
+    <mat-radio-group formControlName="pets" class="guest-form__pets" aria-label="Select number of pets">
+      <mat-label>Number of Pets</mat-label>
+      <br/>
+      <mat-radio-button value="0">0 pets</mat-radio-button>
+      <br/>
+      <mat-radio-button value="1">1 pet</mat-radio-button>
+      <br/>
+      <mat-radio-button value="2">2 pets</mat-radio-button>
+      <br/>
+    </mat-radio-group>
+    <br/>
+    <section class="guest-form__section">
+      <mat-checkbox formControlName="accessible" class="guest-form__accessible">
+        Do you require an accessible room?
+      </mat-checkbox>
+    </section>
+  </form>
+</mat-card>
