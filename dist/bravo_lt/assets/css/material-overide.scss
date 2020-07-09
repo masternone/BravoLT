@@ -1,0 +1,12 @@
+.mat-body, .mat-body-1, .mat-typography {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.guest-form {
+  &__accessible {
+    .mat-checkbox-label {
+      height: 4.1rem;
+      white-space: normal;
+    }
+  }
+}
